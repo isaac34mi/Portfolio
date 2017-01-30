@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Isaac Tetteh's Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+  <div id="navigation-bar">
+  <ul class="w3-navbar w3-black w3-xlarge">
+  	<li class="w3-left" style="width:13%"><a href="#">Isaac Tetteh</a></li>
+    <li class="w3-right" style="width:13%"><a href="resume">Resume</a></li>
+    <li class="w3-right" style="width:13%"><a href="javascript:void(0)" onclick="w3_open()">Projects</a></li>
+    <li class="w3-right" style="width:13%"><a href="/about">About</a></li>
+  </ul>
+
+<nav class="w3-dropnav w3-card-2" style="display:none" id="myDropnav">
+  <div class="w3-container">
+  <span onclick="w3_close()" class="w3-closebtn w3-xlarge" title="Close Menu">&times;</span>
+  </div>  
+  <div class="w3-row-padding w3-padding-bottom">
+    <div class="w3-third">
+    <h3>Python Projects</h3>
+    <a href="/project1">Comming Soon</a>
+    <a href="/project1">Comming Soon</a>
+    <a href="/project1">Comming Soon</a>
+    </div>
+    <div class="w3-third">    
+    <h3>R Projects</h3>
+    <a href="#">Simple Statistics App</a>
+    <a href="/project1">Comming Soon</a>
+    <a href="/project1">Comming Soon</a>
+    </div>
+    <div class="w3-third">    
+    <h3>Other Projects</h3>
+    <a href="/project1">Comming Soon</a>
+    <a href="/project1">Comming Soon</a>
+    <a href="/project1">Comming Soon</a>
+    </div>
+  </div>
+  <br>
+</nav>
+<script>
+function w3_open() {
+    document.getElementById("myDropnav").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("myDropnav").style.display = "none";
+}
+</script>
+</div>
+{% block content %}
+{% endblock %}
+</body>
+<footer>
+  <p class="w3-opacity">designed with w3.css</p>
+</footer>
+</html>
