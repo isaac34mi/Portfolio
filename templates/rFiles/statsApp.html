@@ -1,7 +1,9 @@
+{% extends "navigation.html" %}
+{% body content %}
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Untitled</title>
+<title>Simple Statistics Tool App</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11751,7 +11753,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Simple-Statistical-Tool-App-using-Shiny">Simple Statistical Tool App using Shiny<a class="anchor-link" href="#Simple-Statistical-Tool-App-using-Shiny">&#182;</a></h1><p>This is a simple simple statistical tool that has the following functions as of now:</p>
+<h1 id="Simple-Statistical-Tool-App-using-Shiny">Simple Statistical Tool App using Shiny<a class="anchor-link" href="#Simple-Statistical-Tool-App-using-Shiny">&#182;</a></h1>
+ <a href="https://isaactetteh.shinyapps.io/simpleStatApp/"><h3>Click here for Demo</h3></a>
+ <p>This is a simple simple statistical tool that has the following functions as of now:</p>
 <ul>
 <li>upload a data set of different format.(works great with csv files)</li>
 <li>calculate the measure of location such as mean, mode, median, standard divaiation and others.</li>
@@ -11986,3 +11990,4 @@ shinyServer<span class="p">(</span><span class="kr">function</span><span class="
   </div>
 </body>
 </html>
+{% endblock %}
