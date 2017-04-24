@@ -4,7 +4,8 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 site = defaultdict(lambda: "404.html",{"resume": "resume.html", "about":"about.html", "project1":"projects.html",
-				       "stats_app":"rFiles/statsApp.html","webscraping_tutorial":"rFiles/webscraping_with_R.html"})
+				       "stats_app":"rFiles/statsApp.html","webscraping_tutorial":"rFiles/webscraping_with_R.html",
+				       "webscraping_and_basic_pandas":"pyFiles/indeedwithpandas.html"})
 
 @app.route('/')
 def index():
